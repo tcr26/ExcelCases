@@ -1,0 +1,18 @@
+﻿<Window x:Class="FormCases.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Excel Test Cases" Height="450" Width="625" Background="BlanchedAlmond" Icon="mypos_jBp_icon.ico">
+    <Grid>
+        <Button x:Name="Add_Case" Content="Add Case" HorizontalAlignment="Left" Margin="291,358,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" />
+
+        <TextBox x:Name="TestDescription" Text="Test Description" HorizontalAlignment="Left" Height="23" Margin="291,34,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" MaxLength="25" GotFocus="PlaceholderGotFocus" LostFocus="PlaceholderLostFocus" />
+
+        <Button Content="Browse" HorizontalAlignment="Left" Margin="76,34,0,0" VerticalAlignment="Top" Width="75" Click="BrowseButton" />
+
+        <DatePicker x:Name="CaseDate" SelectedDate="{x:Static sys:DateTime.Now}" HorizontalAlignment="Left" Margin="291,93,0,0" VerticalAlignment="Top" FirstDayOfWeek="Monday" Cursor="None" />
+    </Grid>
+</Window>
